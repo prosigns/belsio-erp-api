@@ -1,0 +1,14 @@
+{
+  "SwaggerSettings": {
+    "Enable": true,
+    "Title": "Belsio ERP v1.0 - .NET 7 WebAPI - Clean Architecture",
+    "Version": "1.0.0",
+    "Description": "Belsio ERP Project v1.0",
+    "ContactName": "Nayab Raheel",
+    "ContactEmail": "nayab@prosignstech.com",
+    "ContactUrl": "https://www.prosignstech.com",
+    "License": false,
+    "LicenseName": "Belsons License",
+    "LicenseUrl": ""
+  }
+}

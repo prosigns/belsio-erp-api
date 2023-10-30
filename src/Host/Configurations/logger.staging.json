@@ -1,0 +1,7 @@
+{
+  "LoggerSettings": {
+    "AppName": "Belsio.Erp",
+    "WriteToFile": false,
+    "StructuredConsoleLogging": true
+  }
+}

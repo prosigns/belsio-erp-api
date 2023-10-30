@@ -1,0 +1,1 @@
+﻿global using Belsio.Erp.Domain.Common.Contracts;

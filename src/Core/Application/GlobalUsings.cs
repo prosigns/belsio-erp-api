@@ -1,0 +1,16 @@
+global using Ardalis.Specification;
+global using FluentValidation;
+global using Belsio.Erp.Application.Common.Events;
+global using Belsio.Erp.Application.Common.Exceptions;
+global using Belsio.Erp.Application.Common.FileStorage;
+global using Belsio.Erp.Application.Common.Interfaces;
+global using Belsio.Erp.Application.Common.Models;
+global using Belsio.Erp.Application.Common.Persistence;
+global using Belsio.Erp.Application.Common.Specification;
+global using Belsio.Erp.Application.Common.Validation;
+global using Belsio.Erp.Domain.Common;
+global using Belsio.Erp.Domain.Common.Contracts;
+global using Belsio.Erp.Shared.Notifications;
+global using MediatR;
+global using Microsoft.Extensions.Localization;
+global using Microsoft.Extensions.Logging;
