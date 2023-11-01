@@ -81,14 +81,14 @@ public class UsersController : VersionNeutralApiController
     //    return Ok();
     //}
 
-    [HttpGet("confirm-email")]
-    [AllowAnonymous]
-    [OpenApiOperation("Confirm email address for a user.", "")]
-    [ApiConventionMethod(typeof(BaseApiConventions), nameof(BaseApiConventions.Search))]
-    public Task<string> ConfirmEmailAsync([FromQuery] string tenant, [FromQuery] string userId, [FromQuery] string code, CancellationToken cancellationToken)
-    {
-        return _userService.ConfirmEmailAsync(userId, code, tenant, cancellationToken);
-    }
+    //[HttpGet("confirm-email")]
+    //[AllowAnonymous]
+    //[OpenApiOperation("Confirm email address for a user.", "")]
+    //[ApiConventionMethod(typeof(BaseApiConventions), nameof(BaseApiConventions.Search))]
+    //public Task<string> ConfirmEmailAsync([FromQuery] string tenant, [FromQuery] string userId, [FromQuery] string code, CancellationToken cancellationToken)
+    //{
+    //    return _userService.ConfirmEmailAsync(userId, code, tenant, cancellationToken);
+    //}
 
     //[HttpGet("confirm-phone-number")]
     //[AllowAnonymous]
@@ -99,15 +99,15 @@ public class UsersController : VersionNeutralApiController
     //    return _userService.ConfirmPhoneNumberAsync(userId, code);
     //}
 
-    [HttpPost("forgot-password")]
-    [AllowAnonymous]
-    [TenantIdHeader]
-    [OpenApiOperation("Request a password reset email for a user.", "")]
-    [ApiConventionMethod(typeof(BaseApiConventions), nameof(BaseApiConventions.Register))]
-    public Task<string> ForgotPasswordAsync(ForgotPasswordRequest request)
-    {
-        return _userService.ForgotPasswordAsync(request, GetOriginFromRequest());
-    }
+    //[HttpPost("forgot-password")]
+    //[AllowAnonymous]
+    //[TenantIdHeader]
+    //[OpenApiOperation("Request a password reset email for a user.", "")]
+    //[ApiConventionMethod(typeof(BaseApiConventions), nameof(BaseApiConventions.Register))]
+    //public Task<string> ForgotPasswordAsync(ForgotPasswordRequest request)
+    //{
+    //    return _userService.ForgotPasswordAsync(request, GetOriginFromRequest());
+    //}
 
     //[HttpPost("reset-password")]
     //[OpenApiOperation("Reset a user's password.", "")]
